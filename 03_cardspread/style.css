@@ -1,0 +1,97 @@
+body {
+    background-color: #ccc;
+}
+
+.cards {
+    position: relative;
+    margin: 50px auto;
+    height: 200px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.cards:hover .card {
+    transition: transform 0.5s ease;
+}
+
+.card-one {
+    background-color: red;
+}
+
+.card-two {
+    background-color: orange;
+}
+
+.card-three {
+    background-color: yellow;
+}
+
+.card-four {
+    background-color: greenyellow;
+}
+
+.card-five {
+    background-color: green;
+}
+
+.card-six {
+    background-color: lightblue;
+}
+
+.card-seven {
+    background-color: blue;
+}
+
+.card-eight {
+    background-color: purple;
+}
+
+.card-nine {
+    background-color: pink;
+}
+
+.cards:hover .card-one {
+    transform: rotate(-80deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-two {
+    transform: rotate(-60deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-three {
+    transform: rotate(-40deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-four {
+    transform: rotate(-20deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-five {
+    transform: rotate(-0deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-six {
+    transform: rotate(20deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-seven {
+    transform: rotate(40deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-eight {
+    transform: rotate(60deg) translateX(-100px) translateY(-50px);
+}
+
+.cards:hover .card-nine {
+    transform: rotate(80deg) translateX(-100px) translateY(-50px);
+}
