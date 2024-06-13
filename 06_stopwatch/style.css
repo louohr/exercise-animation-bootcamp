@@ -1,0 +1,59 @@
+body {
+    background-color: #dfdfdf;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: rgb(247, 247, 247);
+    border: 6px solid #bdbdbd;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.ms,
+.s {
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    z-index: 1;
+}
+
+.s {
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    top: -26%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.dot {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
