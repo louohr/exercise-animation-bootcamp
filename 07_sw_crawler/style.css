@@ -30,7 +30,7 @@ main {
     width: 60%;
     position: relative;
     transform-origin: 50% 100%;
-    animation: crawl 20s infinite;
+    animation: crawl 30s infinite;
 }
 
 .crawl {
