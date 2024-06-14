@@ -13,6 +13,7 @@ main {
     height: 400px;
     width: 400px;
     border-radius: 50%;
+    position: relative;
 }
 
 .ms,
@@ -25,27 +26,28 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: black;
     transform-origin: bottom center;
     transform: rotate(0deg);
     z-index: 1;
 }
 
+.ms {
+    background-color: rgb(88, 88, 88);
+    height: 100px;
+    width: 6px;
+    animation: rotate-minute 3600s linear infinite;
+}
+
 .s {
-    position: absolute;
     height: 90px;
     width: 2px;
-    margin: auto;
-    top: -26%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform-origin: bottom center;
-    transform: rotate(180deg);
-    z-index: 1;
+    background-color: red;
+    animation: rotation-second 60s linear infinite;
 }
 
 .dot {
+    background-color: black;
+    border-radius: 50%;
     position: absolute;
     height: 12px;
     width: 12px;
@@ -54,6 +56,14 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
-    margin: auto;
-    z-index: 1;
+}
+
+@keyframes rotate-minute {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
