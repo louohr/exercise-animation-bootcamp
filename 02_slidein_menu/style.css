@@ -27,10 +27,6 @@ nav {
     z-index: 9;
 }
 
-nav.open {
-    transform: translateX(0);
-}
-
 nav a {
     color: #fff;
     display: flex;
@@ -39,6 +35,11 @@ nav a {
     margin-top: 5rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    transform: translateX(-100%);
+}
+
+nav.open {
+    transform: translateX(0);
 }
 
 aside {
@@ -80,4 +81,28 @@ a.toggle:hover {
     background-color: coral;
     padding: .5rem;
     transition: 0.3s ease-in-out;
+}
+
+/* slide in text */
+nav.open a:nth-child(1) {
+    animation: slideIn 0.5s forwards 0.1s;
+}
+
+nav.open a:nth-child(2) {
+    animation: slideIn 0.5s forwards 0.4s;
+}
+
+nav.open a:nth-child(3) {
+    animation: slideIn 0.5s forwards 0.7s;
+}
+
+nav.open a:nth-child(4) {
+    animation: slideIn 0.5s forwards 1s;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
