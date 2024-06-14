@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'StarWarsFont';
+    src: url('./font/News-Gothic-BT-Roman-Condensed-Font.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@
 body {
     color: #ffe81f;
     background: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
-    font-family: 'Arial', sans-serif;
+    font-family: 'StarWarsFont', sans-serif;
     font-size: 2rem;
     line-height: 1.3;
     overflow: hidden;
