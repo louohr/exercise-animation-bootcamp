@@ -68,7 +68,8 @@ main {
 }
 
 .crawl p {
-    font-size: 2rem;
+    font-size: 3vw;
+    line-height: 1.5em;
     text-align: justify;
     margin: 1rem;
     padding: 1rem;
